@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import { Sidenav, Icon, Dropdown, Nav } from 'rsuite';
+import { Sidenav, Icon, Nav } from 'rsuite';
 import './SideNav.css'
 
 const styles = {
-    width: 200,
+    width: '20%',
 };
 
 const SideNav = () => {
