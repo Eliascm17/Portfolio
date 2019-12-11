@@ -11,12 +11,16 @@ const SideNav = () => {
     const [activeKey, setactiveKey] = useState('1');
     const [expanded, setExpanded] = useState(true);
 
+    function handleChange(e){
+        setactiveKey(e);
+    }
+
     return (
         <div style={styles}>
-            <Sidenav activeKey={activeKey} expanded={expanded}>
+            <Sidenav activeKey={activeKey} expanded={expanded} onSelect={handleChange}>
                 <Sidenav.Body>
                     <Nav>
-                        <Nav.Item eventKey="1" icon={<Icon icon="home" />}>
+                        <Nav.Item eventKey="1" icon={<Icon icon="home" />} >
                             Home
                         </Nav.Item>
                         <Nav.Item eventKey="2" icon={<Icon icon="bolt" />}>
