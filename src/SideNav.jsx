@@ -17,7 +17,7 @@ const SideNav = () => {
 
     return (
         <div style={styles}>
-            <Sidenav activeKey={activeKey} expanded={expanded} onSelect={handleChange}>
+            <Sidenav activeKey={activeKey} expanded={expanded} onSelect={handleChange} >
                 <Sidenav.Body>
                     <Nav>
                         <Nav.Item eventKey="1" icon={<Icon icon="home" />} >
