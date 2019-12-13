@@ -1,13 +1,27 @@
-import React from 'react'
-import mountains from '../images/mountains.jpg'
-import './Home.css'
+import React from "react";
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
+import mountains from "../images/mountains.jpg";
+import "./Home.css";
 
 const Home = () => {
-    return(
-        <div className='landingPage'>
-            <img className='mountains' src={mountains} alt=""/>
-        </div>
-    );
-}
+  return (
+    <ParallaxProvider>
+      <ParallaxBanner
+        className="Image"
+        layers={[
+          {
+            image: mountains,
+            amount: 0.5
+          }
+        ]}
+        style={{
+          height: "900px"
+        }}
+      >
+        <h1>Banner Children</h1>
+      </ParallaxBanner>
+    </ParallaxProvider>
+  );
+};
 
 export default Home;
