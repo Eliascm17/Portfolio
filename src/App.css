@@ -1,33 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-body {
+/* body {
   position: relative;
-  /* background-color: #063e66 !important; */
+  background-color: #063e66 !important;
   background-image: linear-gradient(to bottom, rgb(55, 58, 218) 0%, #3ba563ad 100%);
   height: 500rem;
   min-height: 300vh;
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+header {
+  position: relative;
+  height: 1000px;
+  background-image: linear-gradient(#FF5F6D, #FFC371);
 }
 
-.Name {
+h1 {
+  text-align: center;
+  padding: 300px 0;
+  margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: absolute;
   font-size: 150px;
   text-align: inherit;
   text-align: center;
+  color: #ffffff;
 }
 
-.landingContainer {
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 250px;
+  /* drop the height to have a constant angle for all screen widths */
+}
+
+/* .landingContainer {
   position: absolute;
   top: 3.5%;
   right: 35%;
   color: #ffffff
-}
+} */
 
-.triangle1 {  
+/* .triangle1 {  
 
   position: absolute;
   display: inline-block;
@@ -63,8 +83,8 @@ body {
   position: absolute;
   right: 0px;
   top: 14%;
-}
-
+} */
+/* 
 .parallelogram {
   color: #ffffff;
-}
+} */
