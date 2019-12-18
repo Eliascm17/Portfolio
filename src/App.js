@@ -8,8 +8,9 @@ import { Link } from 'react-scroll'
 
 const Text = () => (
   <Fragment>
+    <NavBar />
     <header>
-      <NavBar />
+      {/* <NavBar /> */}
       <h1 className="Name" name="home">
         Hi, I'm Elias
       </h1>

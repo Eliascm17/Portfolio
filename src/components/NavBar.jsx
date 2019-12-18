@@ -36,7 +36,7 @@ const NavBar = () => {
         spy={true}
         smooth={true}
         offset={0}
-        duration={500}
+        duration={300}
       >
         <Nav.Item eventKey="home">Home</Nav.Item>
       </Link>
@@ -46,7 +46,7 @@ const NavBar = () => {
         spy={true}
         smooth={true}
         offset={-60}
-        duration={500}
+        duration={200}
       >
         <Nav.Item eventKey="about">About</Nav.Item>
       </Link>
@@ -56,7 +56,7 @@ const NavBar = () => {
         spy={true}
         smooth={true}
         offset={-50}
-        duration={500}
+        duration={200}
       >
       <Nav.Item eventKey="projects">Projects</Nav.Item>
       </Link>
@@ -66,7 +66,7 @@ const NavBar = () => {
         spy={true}
         smooth={true}
         offset={80}
-        duration={500}
+        duration={200}
       >
       <Nav.Item eventKey="contact">Contact</Nav.Item>
       </Link>
