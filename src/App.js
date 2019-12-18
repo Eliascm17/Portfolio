@@ -4,34 +4,30 @@ import './App.css';
 import Projects from './components/Projects'
 
 const Text = () => (
-  <header>
-    <h1 className="Name">Hi, I'm Elias</h1>
-    <img
-      src="http://erikdkennedy.com/r-r-r-random/divider-triangle.png"
-      class="divider"
-    />
-  </header>
+  <Fragment>
+    <header>
+      <h1>Hi, I'm Elias</h1>
+    </header>
+
+    <section className="section1">
+      <h1>About</h1>
+    </section>
+
+    <section className="section2">
+      <h1>Projects</h1>
+    </section>
+
+    <section className="section3">
+      <h1>Contact Me</h1>
+    </section>
+  </Fragment>
 );
 
-// const Triangle = () => (
-  //   <div>
-  //     <div className="triangle1"></div>
-  //     <div className="square"></div>
-  //     <div className="triangle2"></div>
-  //   </div>
-
-//   <svg viewBox="10 10 167 281" version="1.1">
-//     <polygon className="parallelogram" points="0,226 83.5,0.1 167,226 " />
-//   </svg>
-
-// );   
 
 function App() {
   return (
     <Fragment>
       <Text />
-      {/* <Triangle /> */}
-      {/* <Projects /> */}
     </Fragment>
   );
 }
