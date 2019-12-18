@@ -13,13 +13,14 @@ header {
 .projects {
   position: relative;
   bottom: -10;
-  height: 1000px;
+  height: 1100px;
   background-image: linear-gradient(rgb(31, 126, 86), rgb(180, 212, 65));
 }
 
 h1 {
+  color: #ffffff;
   text-align: center;
-  padding: 400px 0;
+  padding: 450px 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
@@ -27,29 +28,42 @@ h1 {
   font-size: 150px;
   text-align: inherit;
   text-align: center;
-  color: #ffffff;
+}
+
+.Name {
+    color: #ffffff;
+    text-align: center;
+    padding: 300px 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: absolute;
+    font-size: 150px;
+    text-align: inherit;
+    text-align: center;
+}
+
+ header h1 {
+  padding: 350px 0;
 }
 
 .section1 {
   margin-top: -5vw;
   background-image: linear-gradient(135deg, #1D4350, #A43931);
   height: 1200px;
-  /* clip-path: polygon(0 0,
-    100% 0,
-    100% 100%,
-    0 calc(100% - 5vw)); */
 }
 
 .section2 {
-  clip-path: polygon(10 10, 100% 0, 100% 100%, 0 calc(100% + 5vw));
-  margin-top: -5vw;
-  height: 1000px;
-  background-image: linear-gradient(135deg, rgb(33, 88, 207), rgb(152, 201, 37));
+  clip-path: polygon(100% 0, 0 13%, 0 100%, 100% 100%);
+  margin-top: -8.5vw;
+  height: 1200px;
+  background-image: linear-gradient(135deg, #4B79A1, #283E51);
 }
 
 .section3 {
-  clip-path: polygon(10 10, 100% 0, 100% 100%, 0 calc(100% + 5vw));
+  clip-path: polygon(100% 9%, 0 0, 0 100%, 100% 100%);
   margin-top: -5vw;
-  height: 1000px;
-  background-image: linear-gradient(135deg, rgb(207, 33, 135), rgb(37, 201, 37));
+  height: 1100px;
+  background-image: linear-gradient(135deg, #000000, #5f475e);
+  margin-bottom: 0px;
 }

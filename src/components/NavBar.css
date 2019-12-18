@@ -1,0 +1,38 @@
+@import '~rsuite/dist/styles/rsuite-default.css';
+
+Nav {
+    position: relative;
+    top: 0;
+    margin-bottom: 0;
+}
+
+/* underline of navbar color */
+.rs-nav-subtle.rs-nav-horizontal .rs-nav-item>.rs-nav-item-content::before {
+    background-color: black;
+}
+
+
+.rs-nav-subtle.rs-nav-horizontal .rs-nav-waterline {
+    border-top: none;
+}
+
+/* font color on click */
+.rs-nav .rs-dropdown .rs-dropdown-menu-active~.rs-dropdown-toggle,
+.rs-nav .rs-nav-item-active>.rs-nav-item-content,
+.rs-nav .rs-dropdown .rs-dropdown-menu-active~.rs-dropdown-toggle:hover,
+.rs-nav .rs-nav-item-active>.rs-nav-item-content:hover,
+.rs-nav .rs-dropdown .rs-dropdown-menu-active~.rs-dropdown-toggle:focus,
+.rs-nav .rs-nav-item-active>.rs-nav-item-content:focus,
+.rs-nav .rs-dropdown .rs-dropdown-menu-active~.rs-dropdown-toggle:active,
+.rs-nav .rs-nav-item-active>.rs-nav-item-content:active{
+    color: black;
+}
+
+.rs-nav-item>.rs-nav-item-content {
+    color: rgb(70, 83, 70);
+    font-size: 22px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

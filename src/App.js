@@ -2,11 +2,15 @@ import React, { Fragment } from 'react';
 import { CardActionArea, Card, CardContent, CardMedia, Typography, Button, CardActions, makeStyles } from "@material-ui/core";
 import './App.css';
 import Projects from './components/Projects'
+import Nav from './components/NavBar'
+import NavBar from './components/NavBar';
 
 const Text = () => (
   <Fragment>
     <header>
-      <h1>Hi, I'm Elias</h1>
+      <NavBar />
+      <h1 className='Name'>
+        Hi, I'm Elias</h1>
     </header>
 
     <section className="section1">
@@ -27,6 +31,7 @@ const Text = () => (
 function App() {
   return (
     <Fragment>
+      {/* <NavBar /> */}
       <Text />
     </Fragment>
   );
