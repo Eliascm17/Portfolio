@@ -1,116 +1,70 @@
 import React, { Fragment } from 'react';
-import {
-  CardActionArea,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-  CardActions,
-  makeStyles,
-  Grid
-} from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+import { Button, IconButton, ButtonGroup, ButtonToolbar } from "rsuite";
 import './Projects.css'
 
 
 const Projects = () => (
   <Grid
     container
-    spacing={3}
+    spacing={2}
     direction="row"
-    justify="space-around"
+    justify="center"
     alignItems="center"
     className="projectsGrid"
   >
     <Grid item xs={4} style={{ flexBasis: "auto" }}>
-      <Card className="Card1" style={{ width: "450", height: "600px" }}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: "300px" }}
-            component="img"
-            alt="Projec 1"
-            height="140"
-            image="https://images.unsplash.com/photo-1531168142392-1a206ca970c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            title="Projec 1"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Project 1
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Desc of project
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Repo
-          </Button>
-          <Button size="small" color="primary">
-            Demo
-          </Button>
-        </CardActions>
-      </Card>
+      <div className="wrapper">
+        <div className="clash-card barbarian">
+          <div className="card__image1"></div>
+          <div className="clash-card__level clash-card__level--barbarian">
+            CS 3366 - Fall 2019
+          </div>
+          <div className="clash-card__unit-name">Smart Mirror</div>
+          <div className="clash-card__unit-description">Desc here</div>
+          <div>
+            <ButtonToolbar>
+              <Button color="cyan">Repository</Button>
+              <Button color="yellow">Demo</Button>
+            </ButtonToolbar>
+          </div>
+        </div>
+      </div>
     </Grid>
     <Grid item xs={4} style={{ flexBasis: "auto" }}>
-      <Card className="Card2" style={{ width: "450", height: "600px" }}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: "300px" }}
-            component="img"
-            alt="Projec 1"
-            height="140"
-            image="https://images.unsplash.com/photo-1531168142392-1a206ca970c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            title="Projec 1"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Project 1
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Desc of project
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Repo
-          </Button>
-          <Button size="small" color="primary">
-            Demo
-          </Button>
-        </CardActions>
-      </Card>
+      <div className="wrapper">
+        <div className="clash-card barbarian">
+          <div className="card__image2"></div>
+          <div className="clash-card__level clash-card__level--barbarian">
+            CS 3366 - Fall 2019
+          </div>
+          <div className="clash-card__unit-name">TTU Freshman Guide</div>
+          <div className="clash-card__unit-description">Desc here</div>
+          <div>
+            <ButtonToolbar>
+              <Button color="cyan">Repository</Button>
+              <Button color="yellow">Demo</Button>
+            </ButtonToolbar>
+          </div>
+        </div>
+      </div>
     </Grid>
     <Grid item xs={4} style={{ flexBasis: "auto" }}>
-      <Card className="Card3" style={{ width: "450", height: "600px" }}>
-        <CardActionArea>
-          <CardMedia
-            style={{ height: "300px" }}
-            component="img"
-            alt="Projec 1"
-            height="140"
-            image="https://images.unsplash.com/photo-1531168142392-1a206ca970c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            title="Projec 1"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Project 1
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Desc of project
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Repo
-          </Button>
-          <Button size="small" color="primary">
-            Demo
-          </Button>
-        </CardActions>
-      </Card>
+      <div className="wrapper">
+        <div className="clash-card barbarian">
+          <div className="card__image3"></div>
+          <div className="clash-card__level clash-card__level--barbarian">
+            Personal Project
+          </div>
+          <div className="clash-card__unit-name">Porftolio Website</div>
+          <div className="clash-card__unit-description">Desc here</div>
+          <div>
+            <ButtonToolbar>
+              <Button color="cyan">Repository</Button>
+            </ButtonToolbar>
+          </div>
+        </div>
+      </div>
     </Grid>
   </Grid>
 );

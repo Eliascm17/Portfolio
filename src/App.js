@@ -21,7 +21,8 @@ const Text = () => (
     </section>
 
     <section className="section2" name="projects">
-      <h1>Projects</h1>
+      {/* <h1>Projects</h1> */}
+      <Projects />
     </section>
 
     <section className="section3" name="contact">
@@ -34,7 +35,6 @@ const Text = () => (
 function App() {
   return (
     <Fragment>
-      {/* <NavBar /> */}
       <Text />
     </Fragment>
   );
